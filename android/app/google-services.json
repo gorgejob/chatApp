@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311645088347",
+    "project_id": "testapp-8447b",
+    "storage_bucket": "testapp-8447b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311645088347:android:256331e57acf32b6d4ad7e",
+        "android_client_info": {
+          "package_name": "com.example.chrush"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGuFttsipdbh_sDj2VXyJBB9KaoY08ucQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
