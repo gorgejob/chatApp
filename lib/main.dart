@@ -22,7 +22,7 @@ void main() async {
         BlocProvider(create: (context) => HomeCubit()),
         BlocProvider(create: (context) => Chatbloc()),
       ],
-      child: DevicePreview(enabled: true, builder: (context) => const MyApp()),
+      child: DevicePreview(enabled: false, builder: (context) => const MyApp()),
     ),
   );
 }
@@ -37,9 +37,9 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true, // تضمن إن الخطوط تتناسق مع أحجام الشاشات
       splitScreenMode: true, // تدعم وضع تقسيم الشاشة لو المستخدم مشغله
       builder: (context, child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: const Signinchat(),
+          home: Signinchat(),
         );
       },
     );
