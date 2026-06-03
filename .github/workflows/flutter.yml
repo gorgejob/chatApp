@@ -31,6 +31,15 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
+      - name: Setup Shorebird
+        uses: shorebirdtech/setup-shorebird@v1
+
+      - name: Shorebird Preview / Patch
+        run: shorebird patch android --submit
+        env:
+          SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
+
+
       - name: Build APK
         run: flutter build apk --release
 
